@@ -20,7 +20,7 @@ This enables **data-driven sales and marketing decisions**.
 bike-buyer-analysis/
 │
 ├─ data/
-│ ├─ bike_sales_raw.csv
+│ ├─ bike_sales_raw.xlsx
 │ └─ bike_sales_cleaned.xlsx
 │
 ├─ images/
