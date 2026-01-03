@@ -30,81 +30,70 @@ The goal of this project is to help a bike-selling business:
 
 ---
 
-## 🧠 How This Project Solves the Problem
+## 📁 Project Structure
+```bash
+bike-buyer-analysis/
+│
+├─ data/
+│ ├─ bike_sales_raw.csv
+│ └─ bike_sales_cleaned.xlsx
+│
+├─ images/
+│ ├─ dashboard.png
+│ ├─ eda_pivots.png
+│ └─ formulas.png
+│
+└─ README.md
+```
 
-I analyzed customer demographics and purchasing behavior, then transformed the data into a **simple visual dashboard** that answers key business questions like:
-
-- Who buys bikes the most?
-- Which regions generate higher sales?
-- Does income level influence buying decisions?
-- Which age group should marketing focus on?
-- How do gender, occupation, and education affect purchases?
-
-All insights are presented visually so **non-technical stakeholders can understand them instantly**.
-
----
-
-## 📊 Dashboard Preview
-
-### 📌 Main Business Dashboard
-![Bike Buyer Dashboard](images/dashboard.png)
 
 ---
 
-## 📈 What the Dashboard Shows
+## 🧹 Data Cleaning & Feature Engineering
 
-### 🔹 Key Performance Indicators (KPIs)
-- Total Customers
-- Total Buyers
-- Buyer Percentage
-- Average Income of Buyers
+Performed in Excel using:
+- Removal of duplicates
+- Standardization of categorical values
+- Formatting numeric columns (Income)
+- Feature creation using formulas:
+  - `Age Bracket` (Adolescent / Middle Age / Old)
+  - `Income Bucket` (Low / Medium / High)
+  - `Buyer Flag` (1 or 0)
+  - `Avg Region Income` (VLOOKUP mapping)
 
-These KPIs give a **quick business health check** at a glance.
-
----
-
-### 🔹 Customer Segmentation Analysis
-
-The dashboard breaks down buyers by:
-
-- **Gender**
-- **Age Bracket**
-- **Region**
-- **Income Level**
-- **Education**
-- **Occupation**
-- **Marital Status**
-
-Each segment clearly shows:
-- Total customers
-- Number of buyers
-- Buyer percentage
+✔ Total rows: 1000  
+✔ Columns cleaned: 17  
+✔ 4 new useful features created
 
 ---
 
-### 🔹 Interactive Filters (Slicers)
+## 🔍 Exploratory Data Analysis (Pivot Tables)
 
-Users can filter insights by:
-- Gender
-- Marital Status
-- Region
+Key analyses:
+- Buyer percentage by Region
+- Buyer distribution by Gender
+- Age category buyer trends
+- Income level insights
+- Occupation & education influences
 
-This allows business teams to:
-- Compare customer groups
-- Identify profitable segments
-- Make focused marketing decisions
+📌 **Screenshots available in `images/` folder**
 
 ---
 
-## 💡 Key Business Insights
+## 📊 Dashboard Highlights
 
-✔ **Middle-aged customers** buy the most bikes (~79%)  
-✔ **North America** has the highest buyer conversion (~45%)  
-✔ **High & medium income groups** are top customers  
-✔ **Male customers** buy slightly more bikes than females  
-✔ **Professionals & skilled workers** show strong purchase behavior  
+An interactive Excel dashboard built using:
+- Pivot Charts
+- Slicers for filtering (Gender, Marital Status, Region)
+- KPI cards for quick insights
 
-These insights help businesses **target the right audience and increase sales efficiency**.
+### ✨ Key Business Insights
+- **Middle Age** group buys the most bikes (**79%**).
+- **North America** has the highest buyer conversion (**45%+**).
+- **Medium & High income** groups are top customer segments.
+- **Males** buy slightly more bikes than females (**50.3% vs 49.6%**).
+
+➡️ These findings help target marketing budget efficiently.
 
 ---
 
